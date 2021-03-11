@@ -1,0 +1,7 @@
+00000000  6A25              push byte +0x25
+00000002  58                pop eax
+00000003  6AFF              push byte -0x1
+00000005  5B                pop ebx
+00000006  6A09              push byte +0x9
+00000008  59                pop ecx
+00000009  CD80              int 0x80
