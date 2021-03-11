@@ -1,0 +1,4 @@
+00000000  31C0              xor eax,eax
+00000002  40                inc eax
+00000003  89C3              mov ebx,eax
+00000005  CD80              int 0x80
