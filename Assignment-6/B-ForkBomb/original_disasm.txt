@@ -1,0 +1,4 @@
+00000000  6A02              push byte +0x2
+00000002  58                pop eax
+00000003  CD80              int 0x80
+00000005  EBF9              jmp short 0x0
