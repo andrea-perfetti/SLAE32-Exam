@@ -1,0 +1,8 @@
+00000000  59                pop ecx
+00000001  8B51FC            mov edx,[ecx-0x4]
+00000004  6A04              push byte +0x4
+00000006  58                pop eax
+00000007  CD80              int 0x80
+00000009  6A01              push byte +0x1
+0000000B  58                pop eax
+0000000C  CD80              int 0x80
