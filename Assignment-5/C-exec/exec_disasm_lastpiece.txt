@@ -1,0 +1,4 @@
+00000000  57                push edi
+00000001  53                push ebx
+00000002  89E1              mov ecx,esp
+00000004  CD80              int 0x80
