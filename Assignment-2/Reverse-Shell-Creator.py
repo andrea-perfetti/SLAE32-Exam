@@ -1,5 +1,5 @@
 ########################################
-# Filename: Bind-Shell-Creator.py
+# Filename: Reverse-Shell-Creator.py
 # Author  : Andrea Perfetti
 # SLAE ID : SLAE - 1547
 #:::::::::::::::::::::::::::::::::::::::
