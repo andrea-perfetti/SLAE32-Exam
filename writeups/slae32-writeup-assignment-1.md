@@ -55,7 +55,7 @@ int main (){
 }
 ```
 Trying the shell, we see that it is working as intended:
-![Bind Shell skeleton in C](/img/slae1-01.png)
+![Bind Shell skeleton in C](/writeups/img/slae1-01.png)
 
 ## Porting the C code to Assembly
 Now, we need to port the C code into Assembly code. Basically, we need to replicate the following syscalls:
@@ -268,7 +268,7 @@ The exit function is very simple and known, its code (which needs to be set into
 
 ### Test run
 The Assembly code has been compiled and executed; it worked as intended!
-![Bind Shell skeleton in Assembly](/img/slae1-02.png)
+![Bind Shell skeleton in Assembly](/writeups/img/slae1-02.png)
 
 
 ## Port configuration utility
@@ -279,13 +279,13 @@ I have generated the shellcode from the compiled nasm file and divided it into t
 * the selected port in reversed-Hex (ready for a push on the stack)
 * the complete shellcode with the selected port
 
-![Bind Shell skeleton in C](/img/slae1-03.png)
+![Bind Shell skeleton in C](/writeups/img/slae1-03.png)
 
 In order to test the script, I have first loaded the generated shellcode into a copy of the encrypter utility from Assignment 7 and encrypted it with password 'testme':
-![Bind Shell skeleton in C](/img/slae1-04.png)
+![Bind Shell skeleton in C](/writeups/img/slae1-04.png)
 
 The encrypted string has been copied to the decrypt-exec utility and then executed. As shown in the screenshot, the selected port (8080) has been applied and the shell has executed successfully:
-![Bind Shell skeleton in C](/img/slae1-05.png)
+![Bind Shell skeleton in C](/writeups/img/slae1-05.png)
 
 
 
